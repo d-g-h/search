@@ -1,0 +1,17 @@
+*
+!Dockerfile
+!package.json
+!package-lock.json
+!.npmrc
+!index.html
+!tsconfig.json
+!vite.config.ts
+!frontend/
+!frontend/**
+!public/
+!public/favicon.ico
+!backend/
+!backend/**
+!sample_listings.json
+**/__pycache__/
+**/*.pyc

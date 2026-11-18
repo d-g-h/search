@@ -1,0 +1,23 @@
+@import 'tailwindcss' source('./');
+
+@theme {
+  --color-canvas: oklch(97.5% 0.004 255);
+  --color-surface: oklch(100% 0 0);
+  --color-ink: oklch(24% 0.02 255);
+  --color-muted: oklch(48% 0.025 255);
+  --color-line: oklch(85% 0.02 255);
+  --color-accent: oklch(42% 0.1 251);
+  --color-accent-hover: oklch(35% 0.1 251);
+  --color-danger: oklch(47% 0.119 30);
+}
+
+@layer base {
+  body {
+    @apply bg-canvas text-ink;
+  }
+
+  :where(button, input, select):focus-visible {
+    outline: 0.125rem solid var(--color-accent);
+    outline-offset: 0.125rem;
+  }
+}
